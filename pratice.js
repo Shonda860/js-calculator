@@ -5,7 +5,6 @@ let operators = "*";
 function addNums(num1, num2) {
     return num1 + num2;
 }
-
 // console.log(addNums(num1, num2));
 
 function subNums(num1, num2) {

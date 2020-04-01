@@ -25,12 +25,18 @@ const calculate = function(num1, num2, operation) {
         case "divide":
         case "/":
             console.log(num1 / num2);
+            if (num2 == 0) {
+                console.log("Error");
+            }
             break;
         case "m":
         case "mutli":
         case "mutliple":
         case "*":
             console.log(num1 * num2);
+            break;
+        default:
+            console.log("Invalid Operation");
             break;
     }
 };
