@@ -3,17 +3,36 @@
 const prompt = require("prompt");
 
 const calculateUserInput = function(error, promptInput) {
-    console.log(
-        "This is the value of the promptInput variable that got passed in by prompt, after our prompt package collect user input",
-        promptInput
-    );
+    calculate(promptInput.num1, promptInput.num2, promptInput.operation);
+};
 
-    // Questions to ask and answer:
-    // What is promptInput?
-    // What data type? What does it hold? What does it represent?
-    // How do we read values from it? What syntax?
-    // How can we use it?
-    // Can we call our existing functions now, inside of this function?
+const calculate = function(num1, num2, operation) {
+    switch (operation) {
+        case "a":
+        case "add":
+        case "addition":
+        case "+":
+            console.log(num1 + num2);
+            break;
+        case "s":
+        case "sub":
+        case "subtract":
+        case "-":
+            console.log(num1 - num2);
+            break;
+        case "d":
+        case "div":
+        case "divide":
+        case "/":
+            console.log(num1 / num2);
+            break;
+        case "m":
+        case "mutli":
+        case "mutliple":
+        case "*":
+            console.log(num1 * num2);
+            break;
+    }
 };
 
 //start the prompt
